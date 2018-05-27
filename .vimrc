@@ -10,6 +10,7 @@ set wildmenu
 set showmatch
 set smartindent
 set autoindent
+set nowrap
 
 set number relativenumber
 augroup numbertoggle
