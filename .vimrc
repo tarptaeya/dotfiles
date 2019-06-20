@@ -1,31 +1,38 @@
-set noswapfile
-filetype plugin indent on
 syntax enable
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-set expandtab
-filetype indent on
-set wildmenu
-set showmatch
-set smartindent
-set autoindent
+
+set noswapfile
 set nowrap
 
-set number relativenumber
-augroup numbertoggle
-    autocmd!
-    autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
-    autocmd BufLeave,FocusLost,InsertEnter * set norelativenumber
-augroup END
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set autoindent
+set smartindent
 
-call plug#begin('~/.vim/plugged')
+set ruler
+set showmatch
 
-Plug 'itchyny/lightline.vim'
-Plug 'scrooloose/nerdtree'
+set number
 
-call plug#end()
+filetype on
+filetype indent on
+filetype plugin on
+
+set list
+set listchars=tab:>·,trail:·,eol:¬
+
+set wildmenu
 
 set laststatus=2
-set noshowmode
-let g:lightline = { 'colorscheme': 'PaperColor' }
+set statusline=
+set statusline+=%#SLmode#%{(mode()=='n')?'\ \ NORMAL\ ':''}
+set statusline+=%#SLmode#%{(mode()=='i')?'\ \ INSERT\ ':''}
+set statusline+=%#SLmode#%{(mode()=='r')?'\ \ REPLACE\ ':''}
+set statusline+=%#SLmode#%{(mode()=='v')?'\ \ VISUAL\ ':''}
+set statusline+=%#SLname#\ %t\ 
+set statusline+=%#SLcenter#%=
+set statusline+=%#SLtype#\ %Y\ 
+set statusline+=%#SLpos#\ %3l:%-2c\ 
+set statusline+=%#SLper#\ %3p%%\ 
+
+colorscheme lightscheme
