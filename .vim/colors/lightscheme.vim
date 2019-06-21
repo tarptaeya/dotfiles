@@ -10,11 +10,13 @@ hi clear
 if exists("syntax_on")
     syntax reset
 endif
-let g:colors_name="lightscheme"
+let g:colors_name="mangoscheme"
 
 hi VertSplit ctermfg=231 ctermbg=16
 hi LineNr ctermfg=99
 hi StatusLine ctermfg=99
+hi TabLine ctermfg=231 ctermbg=99
+hi TabLineFill ctermfg=231
 
 hi Comment ctermfg=102
 hi Constant ctermfg=6
