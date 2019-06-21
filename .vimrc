@@ -23,6 +23,11 @@ set listchars=tab:>·,trail:·,eol:¬
 
 set wildmenu
 
+let g:netrw_banner=0
+
+set titlestring=
+set titlestring+=\ %t\ 
+
 set laststatus=2
 set statusline=
 set statusline+=%#SLmode#%{(mode()=='n')?'\ \ NORMAL\ ':''}
