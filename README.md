@@ -1,5 +1,5 @@
 ### My Vim Configuration
-My personal light mode vim configuration - without using any plugin :sparkles:.
+My personal light mode vim configuration + colorscheme :rainbow: - without using any plugin :sparkles:.
 
 ![screenshot](https://github.com/Tarptaeya/dotfiles/blob/master/screenshot.png)
 
