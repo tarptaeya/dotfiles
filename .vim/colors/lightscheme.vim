@@ -10,7 +10,7 @@ hi clear
 if exists("syntax_on")
     syntax reset
 endif
-let g:colors_name="mangoscheme"
+let g:colors_name="lightscheme"
 
 hi VertSplit ctermfg=231 ctermbg=16
 hi LineNr ctermfg=99
